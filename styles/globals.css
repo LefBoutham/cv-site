@@ -1,0 +1,428 @@
+/*
+
+Imports
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;700;800&display=swap");
+/*
+
+Variables
+
+*/
+:root {
+  --main-green: #698d6f;
+  --main-pink: #f8ebeb;
+  --fonts: Helvetica, Arial, sans-serif;
+  --tagline-nav: 24px;
+}
+/*
+
+General settings
+
+*/
+body {
+  margin: 0 !important;
+}
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--main-pink);
+  font-family: "Playfair Display";
+  font-weight: 400;
+}
+a,
+p,
+li {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: var(--main-pink);
+  line-height: 1.2;
+}
+a {
+  color: var(--main-green);
+  text-decoration: none;
+}
+.section-container {
+  max-width: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  background: var(--main-green);
+}
+.inner-container {
+  max-width: 980px;
+  overflow: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.image-placeholder {
+  position: relative;
+}
+/*
+
+Helpers
+
+*/
+.tagline {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: var(--tagline-nav);
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.tooltip-class {
+  font-family: var(--fonts);
+}
+/*
+
+Columns
+
+*/
+.column {
+  position: relative;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.column.grow-2 {
+  flex-grow: 2;
+}
+.column.grow-3 {
+  flex-grow: 3;
+}
+.column.grow-4 {
+  flex-grow: 4;
+}
+.column.grow-5 {
+  flex-grow: 5;
+}
+.column.grow-6 {
+  flex-grow: 6;
+}
+.column.grow-7 {
+  flex-grow: 7;
+}
+.column.grow-8 {
+  flex-grow: 8;
+}
+.column.grow-9 {
+  flex-grow: 9;
+}
+.column.grow-10 {
+  flex-grow: 10;
+}
+/*
+
+Navbar
+
+*/
+nav a {
+  color: var(--main-pink);
+  font-weight: 600;
+  height: 100%;
+  font-size: var(--tagline-nav);
+  position: relative;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  font-family: var(--fonts);
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  position: relative;
+  margin-bottom: 5px;
+}
+nav a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 0;
+  background: #fff;
+  right: 0;
+  transition: 0.3s ease;
+}
+nav a:hover {
+  margin: 5px;
+  transition: 0.5s ease;
+}
+nav a:hover:after {
+  width: 100%;
+  transition: 1s ease;
+}
+/*
+
+Footer
+
+*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 30px;
+  background: #242424;
+}
+footer p {
+  color: var(--main-pink);
+  text-align: center;
+  padding: 5px 0px;
+  font-weight: 300;
+}
+/*
+
+First fold
+
+*/
+.first-fold {
+  height: 100vh;
+}
+.tagline-nav {
+}
+/*
+
+Who am I
+
+*/
+.cryptedmail {
+  color: #fff;
+  font-weight: 500;
+}
+.cryptedmail:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+  color: #fff;
+  font-weight: 500;
+}
+#who-am-i h2 {
+  font-size: 6em;
+  width: 100%;
+  text-align: right;
+  margin: 0;
+}
+ul.contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.contact li {
+  font-weight: 500;
+  color: #fff;
+}
+/*
+
+Timeline
+
+*/
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #ffffff;
+}
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component p,
+.timeline__component h1,
+.timeline__component h2,
+.timeline__component h3,
+.timeline__component h4 {
+  color: #242424;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.774);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.timeline__component--bottom {
+  margin-bottom: 0;
+}
+
+.timeline__middle {
+  position: relative;
+  background: #ffffff;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
+}
+/*
+
+Skills list
+
+*/
+.skills {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.skills p {
+  display: inline-block;
+  font-size: 28px;
+  font-family: Poppins;
+}
+.skills ul {
+  display: inline-block;
+}
+.skills li {
+  list-style: none;
+  display: inline;
+  margin-left: 5px;
+  padding: 5px 10px;
+  background: #fff;
+  color: #242424;
+  border-radius: 8px;
+  font-family: Poppins;
+}
+/*
+
+My work grid
+
+*/
+.my-work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "work1 work2"
+    "work3 work3"
+    "work4 work5";
+  grid-gap: 20px;
+}
+.work1 {
+  grid-area: work1;
+}
+.work2 {
+  grid-area: work2;
+}
+.work3 {
+  grid-area: work3;
+}
+.work4 {
+  grid-area: work4;
+}
+.work5 {
+  grid-area: work5;
+}
+.my-work-grid article {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-image: url("../public/phbg.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  border-radius: 10px;
+}
+.my-work-grid article > * {
+  z-index: 2;
+}
+.my-work-grid article p,
+.my-work-grid article h3 {
+  font-family: Poppins;
+}
+.my-work-grid article h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.my-work-grid article:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #ce8b9d, #bd9799);
+  background-color: #fff;
+  opacity: 0.7;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+/*
+
+Work I've done
+
+*/
+.work-ive-done-vertical {
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 400px;
+  transform-origin: left 30px;
+  left: 0;
+  bottom: 0;
+}
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+.form > * {
+  display: block;
+  width: 100%;
+}
+.form input {
+  margin-bottom: 20px;
+}

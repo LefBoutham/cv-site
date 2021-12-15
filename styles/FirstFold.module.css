@@ -1,0 +1,12 @@
+.headline {
+  font-size: 5rem;
+  margin: 0;
+  font-weight: 400;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.builtwith {
+  display: flex;
+  justify-content: flex-end;
+}
