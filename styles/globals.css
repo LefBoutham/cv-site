@@ -198,7 +198,7 @@ First fold
 
 */
 .first-fold {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 14rem;
   display: flex;
   flex-direction: column;
@@ -420,6 +420,10 @@ My work grid
   right: 0;
   bottom: 0;
   border-radius: 10px;
+}
+.single-work h3,
+.single-work a {
+  text-align: center;
 }
 /*
 

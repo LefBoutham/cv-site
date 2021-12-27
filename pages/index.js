@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 
 export default function Home({ posts }) {
   const ref = useRef(null);
+  //console.log(posts);
 
   useEffect(() => {
     const element = ref.current;
@@ -24,7 +25,7 @@ export default function Home({ posts }) {
         <ThirdFold />
       </section>
       <section className="section-container" id="work-ive-done">
-        <FourthFold />
+        <FourthFold posts={posts} />
       </section>
       <section className="section-container" id="contact-me">
         <FifthFold />
