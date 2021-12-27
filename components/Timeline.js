@@ -44,6 +44,10 @@ const Timeline = (props) => {
           implementations (website/digital marketing/analytics). The initiative
           was successful, however we decided to pursue Melko Media instead.
           <br />
+          <a href="https://wordpress-384045-1641533.cloudwaysapps.com/">
+            Link to deprecated website.
+          </a>
+          <br />
           Duration: 2 months.
         </p>
       </div>

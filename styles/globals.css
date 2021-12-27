@@ -22,6 +22,7 @@ General settings
 */
 body {
   margin: 0 !important;
+  padding-bottom: 61px;
 }
 
 html {
@@ -225,6 +226,15 @@ Who am I
 .cryptedmail:after {
   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
   color: #fff;
+  font-weight: 500;
+}
+.cryptedmailGreen {
+  color: var(--main-green);
+  font-weight: 500;
+}
+.cryptedmailGreen:after {
+  content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);
+  color: var(--main-green);
   font-weight: 500;
 }
 #who-am-i h2 {
@@ -434,4 +444,47 @@ Work I've done
 }
 .form input {
   margin-bottom: 20px;
+}
+/*
+
+Contact me
+
+*/
+#contact-me.section-container {
+  background-color: var(--main-pink);
+  color: var(--main-green);
+}
+
+#contact-me h2 {
+  font-size: 4rem;
+  color: var(--main-green);
+}
+
+#contact-me .column {
+  justify-content: center;
+}
+
+#contact-me ul {
+  list-style: none;
+}
+
+#contact-me li,
+#contact-me a {
+  font-size: 20px;
+  color: var(--main-green) !important;
+}
+
+#contact-me li.point:before {
+  content: "👉";
+  margin-right: 5px;
+}
+
+#contact-me li.phone:before {
+  content: "☎️";
+  margin-right: 5px;
+}
+
+#contact-me li.handshake:before {
+  content: "🤝";
+  margin-right: 5px;
 }

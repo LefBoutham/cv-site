@@ -5,15 +5,11 @@ import Image from "next/image";
 import InnerContainer from "./InnerContainer";
 import { useEffect, useRef, useState } from "react";
 import ReactTooltip from "react-tooltip";
-// import dynamic from "next/dynamic";
-// const ReactTooltip = dynamic(() => import("react-tooltip"), {
-//   ssr: false,
-// });
 
 const SecondFold = () => {
   const email = useRef(null);
 
-  const [isMounted, setIsMounted] = useState(false); // Need this for the react-tooltip
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);

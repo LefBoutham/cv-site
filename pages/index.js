@@ -17,11 +17,7 @@ export default function Home({ posts }) {
       <section className="section-container first-fold" id="introduction">
         <FirstFold />
       </section>
-      <section
-        className="section-container"
-        id="who-am-i"
-        style={{ height: "100vh" }}
-      >
+      <section className="section-container" id="who-am-i">
         <SecondFold />
       </section>
       <section className="section-container" id="skills-and-experience">
@@ -30,11 +26,7 @@ export default function Home({ posts }) {
       <section className="section-container" id="work-ive-done">
         <FourthFold />
       </section>
-      <section
-        className="section-container"
-        id="contact-me"
-        style={{ height: "100vh" }}
-      >
+      <section className="section-container" id="contact-me">
         <FifthFold />
       </section>
       <Footer />
