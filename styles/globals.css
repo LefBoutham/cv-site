@@ -56,18 +56,16 @@ a {
 }
 .section-container {
   max-width: 100%;
-  overflow: auto;
+  padding: 10px;
   margin: 0 auto;
   background: var(--main-green);
 }
 .inner-container {
   max-width: 980px;
-  overflow: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
 }
 .row {
   display: flex;
@@ -200,8 +198,20 @@ First fold
 */
 .first-fold {
   height: 100vh;
+  padding-top: 14rem;
+  display: flex;
+  flex-direction: column;
+}
+.first-fold-image {
+  position: absolute;
+  right: 0;
+  transform: translate(200px, -350px);
+  z-index: 1;
 }
 .tagline-nav {
+  display: block;
+  position: static;
+  z-index: 2;
 }
 /*
 
@@ -220,7 +230,6 @@ Who am I
 #who-am-i h2 {
   font-size: 6em;
   width: 100%;
-  text-align: right;
   margin: 0;
 }
 ul.contact {

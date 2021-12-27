@@ -22,6 +22,9 @@ const FifthFold = () => {
             <li>LinkedIn</li>
             <li>040 5763555</li>
             <li>alex@melkomedia.fi</li>
+            <li>
+              A web developer by day and a curious inquisitive mind by night.
+            </li>
           </ul>
         </Column>
       </Row>

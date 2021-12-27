@@ -1,12 +1,19 @@
 .headline {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0;
   font-weight: 400;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
 }
 
 .builtwith {
   display: flex;
   justify-content: flex-end;
+}
+
+.imalex {
+  font-size: 2.5rem;
+  z-index: 2;
+  display: block;
+  position: relative;
 }

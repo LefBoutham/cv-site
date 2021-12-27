@@ -16,6 +16,20 @@ const FourthFold = () => {
           </h2>
         </Column>
         <Column className="grow-8">
+          <p>
+            <strong>PHP: </strong>I've completed an MVC building course in
+            addition to developing WordPress plugins, Gutenberg blocks and
+            themes. So familiarising myself with frameworks such as Laravel
+            isn't an issue.
+            <br /> <br />
+            <strong>JavaScript and modern web development:</strong> In addition
+            to vanilla JavaScript, I have experience with frameworks such as
+            React (along with Redux and Next.js). I can also create API's using
+            Express.js, not to mention utilizing third party API's or the
+            WordPress REST API to create a headless CMS (in fact, this website
+            was created with the help of WordPress REST API and GraphQL).
+            <br /> <br />
+          </p>
           <h2 style={{ fontSize: "60px" }}>Work Ive done</h2>
           <div className="my-work-grid">
             <article className="single-work work1">

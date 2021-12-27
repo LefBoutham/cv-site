@@ -4,6 +4,7 @@ const InnerContainer = ({ children, ...props }) => {
       className={`inner-container${
         props.className ? " " + props.className : ""
       }`}
+      style={props.style}
     >
       {children}
     </div>

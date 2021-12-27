@@ -25,7 +25,7 @@ const SecondFold = () => {
   }, []);
 
   return (
-    <InnerContainer>
+    <InnerContainer style={{ alignItems: "center" }}>
       {isMounted && (
         <ReactTooltip
           className="tooltip-class"
@@ -36,59 +36,77 @@ const SecondFold = () => {
         />
       )}
       <Row>
-        <h2>Who am I?</h2>
+        <h2>Why me?</h2>
+      </Row>
+      <Row style={{ maxWidth: "800px" }}>
+        <h3 style={{ textAlign: "center", width: "100%" }}>
+          The heart of a marketer, the mind of a developer.
+        </h3>
+        <p>
+          During the past 6 years I’ve completed a multitude of WordPress
+          related projects, which makes me an ideal candidate to work as a
+          WordPress developer. I’ve gotten to know the workings of WordPress
+          more intimately through developing plugins, theme extensions and
+          diving deep into the world of modern web development and PHP.
+          <br /> <br />
+          Above all else however, I'm a passionate fast learner and love working
+          with people. I'm conscientious, responsible and positive.
+          <br /> <br />
+          <strong>
+            Click here to see a thorough overview of my technical skills.
+          </strong>
+          <br /> <br />
+          Even though I'm technically minded, my heart has been forged in the
+          fires of marketing. In University, my major is marketing and my minors
+          are IT and information system sciences. I've learned advanced Java and
+          completed courses on data structures and algorithms, so I'm no
+          stranger to fundamental programming principles either.
+          <br /> <br />
+          I've run my own WordPress development business since 2016, so I have a
+          lot of experience working with a multitude of clients and stakeholders
+          (such as graphic designers and SEO specialists).
+          <br /> <br />
+          As supportive aspects, I've implemented GDPR friendly cookie
+          management systems using CookieBot via Google Tag Manager and Google
+          Analytics, so they're no strangers to me either. I've also worked with
+          several e-commerce projects using WooCommerce in addition to learning
+          the ropes of Liquid to make customizations to a client's Shopify
+          store.
+          <br /> <br />
+          <strong>
+            Click here to see a thorough overview of my work experience.
+          </strong>
+        </p>
+
+        <ul className="contact">
+          <li>Contact me on LinkedIn</li>
+          <li>
+            <a
+              href="#"
+              ref={email}
+              className="cryptedmail"
+              data-name="alex"
+              data-domain="melkomedia"
+              data-tld="fi"
+              data-tip="Copied to clipboard!"
+            >
+              Email me at{" "}
+            </a>
+          </li>
+        </ul>
       </Row>
       <Row>
-        <Column
-          style={{
-            justifyContent: "flex-end",
-          }}
-        >
-          <p>
-            A web developer by day and a curious inquisitive mind by night.
-            During the past 5 years I’ve worked with a wide range of
-            stakeholders and completed tens of website projects, which gives me
-            an edge for web development as well as web related managerial
-            positions. I’ve especially gotten to know the workings of WordPress
-            more intimately through developing plugins and theme extensions.
-            Furthermore, I have experience with JavaScript frameworks such as
-            React and Next.js, creating simple API's with Express.js as well as
-            utilizing third party API's or the WordPress REST API as a headless
-            CMS. I'm a passionate, fast learner and get along with pretty much
-            everyone. My other interest include psychology, bits of philosophy
-            here and there, marketing / growth hacking, crypto / Web3.0, hitting
-            the gym and downhill skiing. ⛷
-          </p>
-          <ul className="contact">
-            <li>Contact me on LinkedIn</li>
-            <li>
-              <a
-                href="#"
-                ref={email}
-                className="cryptedmail"
-                data-name="alex"
-                data-domain="melkomedia"
-                data-tld="fi"
-                data-tip="Copied to clipboard!"
-              >
-                Email me at{" "}
-              </a>
-            </li>
+        <div className="skills">
+          <p>Skills</p>
+          <ul className="skills_list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>WordPress Development</li>
+            <li>WordPress API</li>
           </ul>
-        </Column>
-        <Column>
-          <div
-            className="image-placeholder"
-            style={{ height: "350px", width: "100%" }}
-          >
-            <Image
-              src="/Alex-profiili.jpg"
-              alt="Picture of the author"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
-        </Column>
+        </div>
       </Row>
     </InnerContainer>
   );
