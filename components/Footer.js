@@ -7,7 +7,7 @@ const Footer = () => {
       <InnerContainer>
         <p>
           Built using: Next.js, React, WordPress API, CSS (no frameworks),
-          creative coding using JavaScript, Verce
+          creative coding using JavaScript, Vercel
         </p>
       </InnerContainer>
     </footer>
