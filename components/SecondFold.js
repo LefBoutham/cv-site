@@ -39,43 +39,45 @@ const SecondFold = () => {
           The heart of a marketer, the mind of a developer.
         </h3>
         <p>
-          During the past 6 years I’ve completed a multitude of WordPress
-          related projects, which makes me an ideal candidate to work as a
-          WordPress developer. I’ve gotten to know the workings of WordPress
-          more intimately through developing plugins, theme extensions and
-          diving deep into the world of modern web development and PHP.
+          I’ve been practicing web development since 2014, and producing
+          WordPress websites for clients since 2015. During the past 6 years
+          I’ve worked with a wide range of stakeholders and completed tens of
+          website projects, so I understand the intricate technical details
+          required to deploy a website successfully. I’ve gotten to know the
+          workings of WordPress more intimately, especially in the last couple
+          of years through developing plugins and theme extensions for clients.
+          I have experience in Full Stack programming with React, Express.js and
+          MongoDB, which further complements my skills working with the
+          WordPress REST API.
           <br /> <br />
-          Above all else however, I'm a passionate fast learner and love working
-          with people. I'm conscientious, responsible and positive.
-          <br /> <br />
-          <strong>
-            Click here to see a thorough overview of my technical skills.
-          </strong>
+          However, merely understanding the technical aspect is not enough to be
+          an effective web developer. It’s important to master the soft skills
+          required to communicate, document, and manage expectations at a high
+          level. The aforementioned qualities are reflected in my work from
+          overseeing website projects and managing multiple stakeholders such as
+          the client’s team, SEO professional, digital marketing professional
+          and a graphic designer. Furthermore, using tools like Google Tag
+          Manager and CookieBot or Complianz to ensure that websites comply with
+          GDPR has been central in the past couple of years. One could say that
+          my competence is formed through a unique mixture of technical prowess,
+          project management activities and social skills.
           <br /> <br />
           Even though I'm technically minded, my heart has been forged in the
           fires of marketing. In University, my major is marketing and my minors
           are IT and information system sciences. I've learned advanced Java and
           completed courses on data structures and algorithms, so I'm no
           stranger to fundamental programming principles either.
-          <br /> <br />
-          I've run my own WordPress development business since 2016, so I have a
-          lot of experience working with a multitude of clients and stakeholders
-          (such as graphic designers and SEO specialists).
-          <br /> <br />
-          As supportive aspects, I've implemented GDPR friendly cookie
-          management systems using CookieBot via Google Tag Manager and Google
-          Analytics, so they're no strangers to me either. I've also worked with
-          several e-commerce projects using WooCommerce in addition to learning
-          the ropes of Liquid to make customizations to a client's Shopify
-          store.
-          <br /> <br />
-          <strong>
-            Click here to see a thorough overview of my work experience.
-          </strong>
         </p>
 
         <ul className="contact">
-          <li>Contact me on LinkedIn</li>
+          <li>
+            <a
+              style={{ color: "white" }}
+              href="https://www.linkedin.com/in/alex-botham-abb9399a/"
+            >
+              Contact me on LinkedIn
+            </a>
+          </li>
           <li>
             <a
               href="#"
@@ -98,9 +100,19 @@ const SecondFold = () => {
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>Java and OOP</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>Git</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>Express.js</li>
+            <li>Redux</li>
             <li>PHP</li>
+            <li>GraphQL</li>
             <li>WordPress Development</li>
-            <li>WordPress API</li>
+            <li>WordPress REST API</li>
+            <li>And more to come 😎</li>
           </ul>
         </div>
       </Row>

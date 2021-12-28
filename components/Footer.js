@@ -6,8 +6,8 @@ const Footer = () => {
     <footer>
       <InnerContainer>
         <p>
-          Built using: Next.js, React, WordPress API, CSS (no frameworks),
-          creative coding using JavaScript, Vercel
+          Stack: Next.js, React, WordPress API, CSS (no frameworks), deployed
+          with Vercel
         </p>
       </InnerContainer>
     </footer>

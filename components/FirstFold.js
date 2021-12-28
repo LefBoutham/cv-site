@@ -3,6 +3,7 @@ import styles from "../styles/FirstFold.module.css";
 import InnerContainer from "./InnerContainer";
 import Row from "./Row";
 import Image from "next/image";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const FirstFold = () => {
   return (
@@ -28,16 +29,24 @@ const FirstFold = () => {
           <nav>
             <ul>
               <li>
-                <a>Why me?</a>
+                <Link smooth={true} to="who-am-i">
+                  Why me?
+                </Link>
               </li>
               <li>
-                <a>Skills / Experience</a>
+                <Link smooth={true} to="skills-and-experience">
+                  Skills / Experience
+                </Link>
               </li>
               <li>
-                <a>Work I've done</a>
+                <Link smooth={true} to="work-ive-done">
+                  Work I've done
+                </Link>
               </li>
               <li>
-                <a>More about me + CV</a>
+                <Link smooth={true} to="contact-me">
+                  Get in touch
+                </Link>
               </li>
             </ul>
           </nav>

@@ -42,15 +42,19 @@ export async function getStaticProps() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         query: `
-      query MyQuery {
-        posts {
-          nodes {
-            slug
-            title
+        query AllPostsQuery {
+          posts {
+            nodes {
+              slug
+              content
+              title
+              websiteUrl {
+                url
+              }
+            }
           }
         }
-      }      
-        `,
+         `,
       }),
     }
   );
