@@ -188,6 +188,7 @@ footer {
   width: 100%;
   min-height: 30px;
   background: #242424;
+  z-index: 1000;
 }
 footer p {
   color: var(--main-pink);
