@@ -7,7 +7,7 @@ const Footer = () => {
       <InnerContainer>
         <p>
           Stack: Next.js, React, WordPress API, CSS (no frameworks), deployed
-          with Vercel
+          using Vercel
         </p>
       </InnerContainer>
     </footer>
