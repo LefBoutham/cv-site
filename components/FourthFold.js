@@ -1,7 +1,16 @@
+/* eslint-disable react/no-unescaped-entities */
 import Row from "./Row";
 import Column from "./Column";
 import InnerContainer from "./InnerContainer";
-const FourthFold = () => {
+const FourthFold = ({ posts, ...props }) => {
+  const workItems = Object.keys(posts.nodes).map((post, i) => {
+    return (
+      <article key={i} className={`single-work work work${i}`}>
+        <h3>{posts.nodes[i].title}</h3>
+      </article>
+    );
+  });
+
   return (
     <InnerContainer>
       <Row
@@ -32,7 +41,8 @@ const FourthFold = () => {
           </p>
           <h2 style={{ fontSize: "60px" }}>Work Ive done</h2>
           <div className="my-work-grid">
-            <article className="single-work work1">
+            {workItems}
+            {/* <article className="single-work work1">
               <h3>Melko Media</h3>
             </article>
             <article className="single-work work2">
@@ -46,7 +56,7 @@ const FourthFold = () => {
             </article>
             <article className="single-work work5">
               <h3>Jyväskylän Padel</h3>
-            </article>
+            </article> */}
           </div>
         </Column>
       </Row>

@@ -24,7 +24,7 @@ export default function Home({ posts }) {
         <ThirdFold />
       </section>
       <section className="section-container" id="work-ive-done">
-        <FourthFold />
+        <FourthFold posts={posts} />
       </section>
       <section className="section-container" id="contact-me">
         <FifthFold />
